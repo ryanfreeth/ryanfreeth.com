@@ -51,6 +51,7 @@ configure :development do
   activate :livereload
 end
 
+# Pretty URLs - See https://middlemanapp.com/advanced/pretty_urls/
 activate :directory_indexes
 
 # Methods defined in the helpers block are available in templates
@@ -62,9 +63,22 @@ activate :directory_indexes
 
 # Build-specific configuration
 configure :build do
-  # Minify CSS on build
-  # activate :minify_css
+  # Exclude any vendor components (bower or custom builds) in the build
+  ignore 'stylesheets/vendor/*'
+  ignore 'javascripts/vendor/*'
 
+  # Compress ALL images (advanced)
+  # Before activating the below, follow setup instructions on https://github.com/toy/image_optim
+  # activate :imageoptim do |options|
+  #   options.pngout = false # set to true when pngout is also installed
+  # end
+
+  activate :gzip
+  # Minify CSS on build
+  activate :minify_css
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
+  # Uniquely-named assets (cache buster)
+  # Exception: svg & png in images folder because they need to be interchangeable by JS
+  activate :asset_hash, ignore: [%r{images/(.*\.png|.*\.svg)$}i]
 end
