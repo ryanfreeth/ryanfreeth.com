@@ -37,7 +37,7 @@ header.navigation {
 	  	}
 
 	  	.logo {
-		    float: left;    
+		    float: left;
 		    max-height: $navigation-height;
 		    padding-left: $navigation-padding;
 		    padding-right: 2em;
@@ -48,14 +48,14 @@ header.navigation {
 		    }
 	  	}
 
-	  
+
 		// MOBILE VIEW
 
 	  	.navigation-menu-button {
 		    color: $navigation-color;
 		    display: block;
 		    float: right;
-		    font-family: $sans-serif;
+		    font-family: $base-font-family;
 		    font-weight: 700;
 		    line-height: $navigation-height;
 		    margin: 0;
@@ -71,20 +71,20 @@ header.navigation {
 	    	}
 	  	}
 
-	  
+
 		// NAVIGATION MENU
 
 	  	.nav {
 	    	z-index: 9999999;
 	    	float: none;
-	    
+
 	    	@include media ($horizontal-bar-mode) {
 	      		float: right;
 	    	}
 	  	}
 
-	  	ul#navigation-menu {    
-	    	-webkit-transform-style: preserve-3d; 
+	  	ul#navigation-menu {
+	    	-webkit-transform-style: preserve-3d;
 			// stop webkit flicker
 		    clear: both;
 		    display: none;
@@ -101,7 +101,7 @@ header.navigation {
 	    	}
 	  	}
 
-	  
+
 		// NAVIGATION LINKS
 
 	  	ul li.nav-link {
@@ -208,7 +208,7 @@ header.navigation {
 		        font-size: 1.2em;
 		        position: absolute;
 		        right: $navigation-submenu-padding / 2;
-		    }      
+		    }
 		}
 
 		&:hover > .submenu {
@@ -283,4 +283,4 @@ header.navigation {
 	      	}
 	    }
 	}
-}  
+}

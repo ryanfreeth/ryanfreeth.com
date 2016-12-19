@@ -80,7 +80,7 @@ section.blog {
 			}
 
 			&:hover i {
-				color: $highlight;		
+				color: $highlight;
 			}
 		}
 	}
@@ -93,6 +93,6 @@ section.blog {
 	}
 }
 
-@import 'partials/blog-single';
-@import 'partials/blog-archive';
-@import 'partials/blog-comments';
+@import 'blog-single';
+@import 'blog-archive';
+@import 'blog-comments';

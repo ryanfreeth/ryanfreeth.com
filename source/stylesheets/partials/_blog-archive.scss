@@ -3,7 +3,7 @@
 .blog-archive {
 	padding: 9em 0 3em 0;
 }
-	
+
 .main-column {
 
 	.blog-item {
@@ -39,7 +39,7 @@
 				margin-top: .8em;
 			}
 		}
-			
+
 	}
 }
 
@@ -63,7 +63,7 @@
 
 	    ul li {
 	      	display: none;
-	      
+
 			&:nth-child(1),
 			&:nth-child(2),
 			&:nth-child(3) {
@@ -76,7 +76,8 @@
 	    }
 
 	    li a {
-			@include transition (all 0.2s ease-in-out);
+			transition: 0.2s;
+			transition-timing-function: ease-in-out;
 			background: $pagination-background;
 			border-radius: $base-border-radius;
 			border: none;

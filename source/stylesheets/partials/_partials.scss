@@ -5,42 +5,46 @@
 // @import 'partials/owl-theme';
 
 /* ====================
+4. TEMPLATE GLOBAL VARIABLES
+==================== */
+@import 'variables';
+/* ====================
 4. TEMPLATE GLOBAL STYLES
 ==================== */
-@import 'partials/globals';
+@import 'globals';
 /* ====================
  5. HEADER
 ==================== */
-@import 'partials/header';
+@import 'header';
 /* ====================
 6. INTRO SECTION
 ==================== */
-@import 'partials/intro';
+@import 'intro';
 /* ====================
 7. FEATURES SECTION
 ==================== */
-@import 'partials/features';
+@import 'features';
 /* ====================
 8. NEWSLETTER SECTION
 ==================== */
-@import 'partials/newsletter';
+@import 'newsletter';
 /* ====================
 9. SHOWCASE SECTION
 ==================== */
-@import 'partials/showcase';
+@import 'showcase';
 /* ====================
 10. QUOTE / TESTIMONIALS
 ==================== */
-@import 'partials/quote';
+@import 'quote';
 /* ====================
 11. BLOG SECTION
 ==================== */
-@import 'partials/blog';
+@import 'blog';
 /* ====================
 12. CONTACT SECTION
 ==================== */
-@import 'partials/contact';
+@import 'contact';
 /* ====================
 13. FOOTER
 ==================== */
-@import 'partials/footer';
+@import 'footer';

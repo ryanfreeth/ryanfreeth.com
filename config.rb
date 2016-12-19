@@ -75,12 +75,12 @@ configure :build do
   #   options.pngout = false # set to true when pngout is also installed
   # end
 
-  activate :gzip
+  # activate :gzip
   # Minify CSS on build
-  activate :minify_css
+  # activate :minify_css
   # Minify Javascript on build
-  activate :minify_javascript
+  # activate :minify_javascript
   # Uniquely-named assets (cache buster)
   # Exception: svg & png in images folder because they need to be interchangeable by JS
-  activate :asset_hash, ignore: [%r{images/(.*\.png|.*\.svg)$}i]
+  # activate :asset_hash, ignore: [%r{images/(.*\.png|.*\.svg)$}i]
 end

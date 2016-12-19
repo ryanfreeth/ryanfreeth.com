@@ -31,27 +31,23 @@ a {
 	}
 }
 
-input, 
-textarea, 
+input,
+textarea,
 button {
 	font-family: 'Montserrat', sans-serif !important;
 }
 
-input[type="text"], 
+input[type="text"],
 input[type="email"],
 textarea {
 	color: darken(white, 40%);
 	border: solid 2px darken(white, 8%) !important;
 	box-shadow: none !important;
 
-	@include placeholder {
-	    color: darken(white, 25%);
-	}
-
 	&:focus {
 		border: solid 2px darken(white, 20%) !important;
 	}
-} 
+}
 
 /* layout */
 .container {
@@ -97,7 +93,7 @@ section {
 	margin-bottom: 3em;
 
 	h2 {
-		
+
 	}
 
 	hr {
@@ -105,7 +101,7 @@ section {
 		margin: 1em auto 1.5em;
 
 		&.small {
-			width: 50px;	
+			width: 50px;
 		}
 	}
 
@@ -116,7 +112,7 @@ section {
 }
 
 /* buttons */
-a.button.alt, 
+a.button.alt,
 a.button.large.alt {
 	background: $highlight-2;
 
@@ -188,12 +184,12 @@ a.button.large {
 
 	&:before {
 		font-family: 'Fontawesome';
-		font-size: 3em; 
-		display: inline-block; 
-		content: '\f104'; 
+		font-size: 3em;
+		display: inline-block;
+		content: '\f104';
 	}
 
-	&.flex-next:before { 
-		content: '\f105'; 
+	&.flex-next:before {
+		content: '\f105';
 	}
 }

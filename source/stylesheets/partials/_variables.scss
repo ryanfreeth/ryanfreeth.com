@@ -1,0 +1,24 @@
+// Breakpoints
+$small-screen: em(480);
+$small-screen-up: new-breakpoint(min-width $small-screen 12);
+$medium-screen-up: new-breakpoint(min-width $medium-screen 12);
+$large-screen-up: new-breakpoint(min-width $large-screen 12);
+
+$large-screen-down: new-breakpoint(max-width $large-screen 12);
+$medium-screen-down: new-breakpoint(max-width $medium-screen 12);
+$small-screen-down: new-breakpoint(max-width $small-screen 12);
+
+// Colors
+$highlight-color: #2ecc71;
+$highlight-2: #f39c12;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$base-accent-color: $highlight-color;
+$action-color: $base-accent-color;
+
+// Link Colors
+$base-link-color: $base-accent-color;
+$hover-link-color: darken($base-accent-color, 15);
+$base-button-color: $base-link-color;
+$hover-button-color: $hover-link-color;
