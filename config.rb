@@ -61,6 +61,8 @@ activate :directory_indexes
 #   end
 # end
 
+activate :autoprefixer
+
 # Build-specific configuration
 configure :build do
   # Exclude any vendor components (bower or custom builds) in the build
