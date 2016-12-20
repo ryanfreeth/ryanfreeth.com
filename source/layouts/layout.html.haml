@@ -12,9 +12,9 @@
     %link{:href => "http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css", :rel => "stylesheet"}/
     = stylesheet_link_tag :site
   %body{:class => page_classes}
-    = partial "layouts/header"
+    = partial 'layouts/header'
     = yield
-    = partial "layouts/footer"
+    = partial 'layouts/footer'
 
     -# Load all Javascript at the end to avoid render-blocking
     = javascript_include_tag :all

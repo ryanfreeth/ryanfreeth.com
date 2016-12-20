@@ -1,0 +1,70 @@
+.blog-single
+  .container
+    / main columnn
+    %article.article-column
+      / image, title, meta and excerpt
+      .media
+        #showcase-slider.owl-carousel.owl-theme
+          / slider items
+          .item
+            %img{:alt => "Slider Image 1", :src => "http://placehold.it/800x600"}/
+          .item
+            %img{:alt => "Slider Image 2", :src => "http://placehold.it/800x600"}/
+          .item
+            %img{:alt => "Slider Image 2", :src => "http://placehold.it/800x600"}/
+      .title
+        %h2 This is the blog post title.
+      .meta
+        by
+        %span.autor
+          %a{:href => "#"} admin
+        on
+        %span.date
+          %a{:href => "#"} 18th August 2014
+        in
+        %span.categories
+          %a{:href => "#"}> news
+          ,
+          %a{:href => "#"} competitions
+          |
+          %span.comments
+            %a{:href => "#"} 4 Comments
+      %p.post-intro Why should you go with Neat? We've been discussing the topic rather heavily as of late, and here are a few good reasons.
+      / the content
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus repudiandae provident eaque esse? Laboriosam aut ex voluptatem vitae blanditiis, ad est nihil distinctio, aliquid, vel, cupiditate dolorem sit obcaecati molestias.
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum tempore error ad nesciunt minima ratione fuga id totam, labore asperiores rerum dolorem fugit neque sequi, quo delectus laborum animi velit.
+      %blockquote Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nam et, possimus nihil officia, optio facilis libero adipisci tempora architecto eum. Maxime explicabo, consectetur officia at iusto est iste. Quo.
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quidem odit, cumque corrupti quas, distinctio veniam vero voluptatum animi culpa! Quo nihil placeat quod labore, tenetur quas suscipit id quasi.
+      .author-box
+        .author-avatar
+          %a{:href => "#"}
+            %img{:alt => "", :src => "http://placehold.it/80x80"}/
+        .author-bio
+          %h3
+            Author:
+            %a{:href => "#"} John Westbrook
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus inventore ipsum, ullam necessitatibus hic, quis itaque fugit accusamus, in suscipit placeat nemo, blanditiis harum voluptas dolorem sequi quos error atque.
+      #section-comment-form.title
+        %h3 RSVP below
+        %hr.small/
+      .comment-form
+        / contact form
+        %form#comment-form{:action => "https://formspree.io/ryan.freeth@gmail.com", :method => "POST", :novalidate => ""}
+          .form
+            .form-left
+              %p
+                %label{:for => "name"} Name
+                %input#name{:name => "name", :placeholder => "Name...", :type => "text"}/
+              %p
+                %label{:for => "email"} Email
+                %input#email{:name => "email", :placeholder => "E-mail...", :type => "email"}/
+              %input{:name => "_subject", :type => "hidden", :value => "Wedding RSVP"}/
+              %input{:name => "_gotcha", :type => "text", style: "display:none"}
+            .form-right
+              %p
+                %label{:for => "message"} Message
+                %textarea#message{:name => "message", :placeholder => "Comment away...", :rows => "10"}
+          #contact-error
+          %p.submit
+            %input.button{:type => "submit", :value => "Send"}/
+        / end form
