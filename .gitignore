@@ -19,3 +19,7 @@
 
 # Jetbrains project files
 .idea
+
+# Ignore node & webpack
+/node_modules/
+/.tmp/

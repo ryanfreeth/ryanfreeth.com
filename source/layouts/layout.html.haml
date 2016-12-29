@@ -7,7 +7,7 @@
     / Use title if it's in the page YAML frontmatter
     %title
       Blog Title#{' - ' + current_article.title unless current_article.nil?}
-    = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
+    = feed_tag :atom, "#{blog('blog').options.prefix.to_s}/feed.xml", title: "Atom Feed"
     %link{:href => "//fonts.googleapis.com/css?family=Lato:300,400", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css", :rel => "stylesheet"}/
     = stylesheet_link_tag :site
@@ -17,4 +17,4 @@
     = partial 'layouts/footer'
 
     -# Load all Javascript at the end to avoid render-blocking
-    = javascript_include_tag :all
+    = javascript_include_tag :site
