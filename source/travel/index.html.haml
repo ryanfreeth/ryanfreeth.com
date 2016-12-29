@@ -1,0 +1,173 @@
+---
+pageable: true
+per_page: 10
+blog: travel
+---
+.blog-single
+  .container
+    / main columnn
+    %article.article-column
+      .title
+        %h2 This is the blog post title.
+      .meta
+        by
+        %span.autor
+          %a{:href => "#"} admin
+        on
+        %span.date
+          %a{:href => "#"} 18th August 2014
+        in
+        %span.categories
+          %a{:href => "#"}> news
+          ,
+          %a{:href => "#"} competitions
+          |
+          %span.comments
+            %a{:href => "#"} 4 Comments
+      %p.post-intro Why should you go with Neat? We've been discussing the topic rather heavily as of late, and here are a few good reasons.
+      / the content
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus repudiandae provident eaque esse? Laboriosam aut ex voluptatem vitae blanditiis, ad est nihil distinctio, aliquid, vel, cupiditate dolorem sit obcaecati molestias.
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum tempore error ad nesciunt minima ratione fuga id totam, labore asperiores rerum dolorem fugit neque sequi, quo delectus laborum animi velit.
+      %blockquote Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nam et, possimus nihil officia, optio facilis libero adipisci tempora architecto eum. Maxime explicabo, consectetur officia at iusto est iste. Quo.
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quidem odit, cumque corrupti quas, distinctio veniam vero voluptatum animi culpa! Quo nihil placeat quod labore, tenetur quas suscipit id quasi.
+      .post-tags
+        %h3 Tags:
+        %span
+          %a{:href => "#"} mountains
+        %span
+          %a{:href => "#"} New Zealand
+        %span
+          %a{:href => "#"} Summer
+      .author-box
+        .author-avatar
+          %a{:href => "#"}
+            %img{:alt => "", :src => "http://placehold.it/80x80"}/
+        .author-bio
+          %h3
+            Author:
+            %a{:href => "#"} John Westbrook
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus inventore ipsum, ullam necessitatibus hic, quis itaque fugit accusamus, in suscipit placeat nemo, blanditiis harum voluptas dolorem sequi quos error atque.
+      .title
+        %h3
+          4 Comments.
+          %a{:href => "#section-comment-form"} Add yours.
+        %hr.small/
+      %ul.comments
+        %li.comment
+          .comment-image
+            %img{:alt => "", :src => "http://placehold.it/80x80"}/
+          .comment-content
+            %h2
+              %a{:href => "#"} Jessica Smith
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.
+            %p.comment-detail Date or details about this post
+        %li.comment.level-1
+          .comment-image
+            %img{:alt => "", :src => "http://placehold.it/80x80"}/
+          .comment-content
+            %h2
+              %a{:href => "#"} Alex Johnson
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.
+            %p.comment-detail Date or details about this post
+        %li.comment.level-2
+          .comment-image
+            %img{:alt => "", :src => "http://placehold.it/80x80"}/
+          .comment-content
+            %h2
+              %a{:href => "#"} Jimmy Jones
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.
+            %p.comment-detail Date or details about this post
+        %li.comment
+          .comment-image
+            %img{:alt => "", :src => "http://placehold.it/80x80"}/
+          .comment-content
+            %h2
+              %a{:href => "#"} Monica Stewart
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.
+            %p.comment-detail Date or details about this post
+      #section-comment-form.title
+        %h3 Add a Comment
+        %hr.small/
+      .comment-form
+        / contact form
+        %form#comment-form{:novalidate => ""}
+          .form
+            .form-left
+              %p
+                %label{:for => "name"} Name
+                %input#name{:name => "name", :placeholder => "Name...", :type => "text"}/
+              %p
+                %label{:for => "email"} Email
+                %input#email{:name => "email", :placeholder => "E-mail...", :type => "email"}/
+              %p
+                %label{:for => "website"} Website
+                %input#website{:name => "website", :placeholder => "Website...", :type => "text"}/
+            .form-right
+              %p
+                %label{:for => "message"} Message
+                %textarea#message{:name => "message", :placeholder => "Comment away...", :rows => "10"}
+          #contact-error
+          %p.submit
+            %input.button{:type => "submit", :value => "Post Comment"}/
+        / end form
+    / sidebar
+    %aside.sidebar
+      / categories widget
+      .widget-wrapper
+        .widget-title
+          %h4 Categories
+        %ul.blog-categories
+          %li
+            %a{:href => "#"} News
+          %li
+            %a{:href => "#"} Special Anouncements
+          %li
+            %a{:href => "#"} Competitions
+          %li
+            %a{:href => "#"} User Stories
+      / search widget
+      .widget-wrapper
+        .widget-title
+          %h4 Search
+        %form
+          %input#search.search-widget{:name => "search", :placeholder => "type and hit enter...", :type => "text"}/
+      / tags widget
+      .widget-wrapper
+        .widget-title
+          %h4 Tags
+        .blog-tags
+          %span
+            %a{:href => "#"} mountains
+          %span
+            %a{:href => "#"} New Zealand
+          %span
+            %a{:href => "#"} Switzerland
+          %span
+            %a{:href => "#"} Summer
+          %span
+            %a{:href => "#"} Winter
+          %span
+            %a{:href => "#"} sports
+          %span
+            %a{:href => "#"} another one
+          %span
+            %a{:href => "#"} tags are cool!
+          %span
+            %a{:href => "#"} tutorial
+          %span
+            %a{:href => "#"} showcase
+-# %aside
+-#   %h2 Recent Articles
+-#   %ol
+-#     - blog('travel').articles[0...10].each do |article|
+-#       %li
+-#         = link_to article.title, article
+-#         %span= article.date.strftime('%b %e')
+-#   %h2 Tags
+-#   %ol
+-#     - blog('travel').tags.each do |tag, articles|
+-#       %li= link_to "#{tag} (#{articles.size})", tag_path(tag)
+-#   %h2 By Year
+-#   %ol
+-#     - blog('travel').articles.group_by {|a| a.date.year }.each do |year, articles|
+-#       %li= link_to "#{year} (#{articles.size})", blog_year_path(year)
