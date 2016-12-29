@@ -9,7 +9,7 @@
 		background-size: cover;
 	}
 
-	.nl-text, 
+	.nl-text,
 	.nl-form {
 		@include span-columns(6);
 
@@ -20,9 +20,9 @@
 	}
 
 	.nl-text {
-	
+
 		p {
-			margin-bottom: 0;	
+			margin-bottom: 0;
 		}
 	}
 
@@ -31,7 +31,7 @@
 		input[type="email"] {
 
 			@include media($medium-screen-down) {
-				@inclund span-columns(4);
+				@include span-columns(4);
 				width: 100%;
 				border-radius: 3px;
 			}
@@ -46,9 +46,9 @@
 		}
 
 		input[type="submit"] {
-			
+
 			@include media($medium-screen-down) {
-				@inclund span-columns(4);
+				@include span-columns(4);
 				width: 100%;
 				margin-top: 1em;
 				border-radius: 3px;

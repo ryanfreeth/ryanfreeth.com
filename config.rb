@@ -104,7 +104,7 @@ configure :build do
   # Exclude any vendor components (bower or custom builds) in the build
   # ignore 'stylesheets/vendor/*'
   # ignore 'javascripts/vendor/*'
-  
+
   # "Ignore" JS so webpack has full control.
   ignore { |path| path =~ /\/(.*)\.js$/ && $1 != 'site' }
 
@@ -116,9 +116,9 @@ configure :build do
 
   # activate :gzip
   # Minify CSS on build
-  # activate :minify_css
+  activate :minify_css
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
   # Uniquely-named assets (cache buster)
   # Exception: svg & png in images folder because they need to be interchangeable by JS
   # activate :asset_hash, ignore: [%r{images/(.*\.png|.*\.svg)$}i]
